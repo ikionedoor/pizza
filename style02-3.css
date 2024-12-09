@@ -1,0 +1,255 @@
+/* 設置圖片大小保持比例 */
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* 全局字體和背景 */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ff6347;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+header a:hover{
+    text-decoration: underline;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+/* 内容布局 */
+.warp {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.header-img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.all {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.temp1 {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.temp2 {
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.temp2:hover {
+    transform: scale(1.05);
+}
+
+.team-member {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+footer  {
+        background-color:  rgb(120, 87, 87);
+        color: #ffe4e4;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        font-size: 20px;
+}
+
+/* 通用樣式，設置全局字體 */
+body {
+    font-family: 'Poppins', sans-serif; /* 使用現代感字體 */
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* 圖片容器，設置相對定位 */
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+/* 圖片樣式 */
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    filter: brightness(60%); /* 減少圖片亮度，讓表單區域更突出 */
+}
+
+/* 加入會員區域，設置為絕對定位，且保持透明 */
+.membership-section {
+    position: absolute;
+    top: 50%; /* 放置在圖片的中央 */
+    left: 50%;
+    transform: translate(-50%, -50%); /* 完全居中 */
+    background: rgba(255, 255, 255, 0.6); /* 半透明背景 */
+    padding: 20px 30px;
+    border-radius: 15px; /* 圓角邊框 */
+    text-align: center;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* 微弱的陰影 */
+    width: 60%; /* 相對較小的寬度 */
+    max-width: 350px; /* 最大寬度限制 */
+    backdrop-filter: blur(8px); /* 背景模糊效果 */
+    animation: floatUp 1s ease-out forwards; /* 讓表單浮動進場 */
+}
+
+/* 表單浮動進場的動畫效果 */
+@keyframes floatUp {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, 60%); /* 初始位置從下方浮動進來 */
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%); /* 結束位置完全居中 */
+    }
+}
+
+/* 標題樣式 */
+.membership-section h2 {
+    font-size: 1.6rem;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* 表單樣式 */
+.membership-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+/* 輸入框樣式 */
+.membership-form input[type="email"] {
+    padding: 12px 20px;
+    width: 100%;
+    font-size: 1.1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px; /* 更圓潤的邊角 */
+    outline: none;
+    background: rgba(255, 255, 255, 0.8); /* 半透明背景 */
+    color: #333;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* 輸入框聚焦效果 */
+.membership-form input[type="email"]:focus {
+    border-color: #f06;
+    box-shadow: 0 0 8px rgba(240, 6, 102, 0.5); /* 聚焦時加入陰影效果 */
+}
+
+/* 按鈕樣式 */
+.join-btn {
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    color: #bf9292;
+    background-color: #ffc9c9; /* 主題色 */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* 按鈕懸停效果 */
+.join-btn:hover {
+    background-color: #e04e72;
+    transform: translateY(-3px); /* 按鈕上移效果 */
+}
+
+/* 加入會員區域，設置為固定定位，且保持透明 */
+.membership-section {
+    position: fixed;
+    top: 50%; /* 垂直居中 */
+    left: 50%; /* 水平居中 */
+    transform: translate(-50%, -50%); /* 完全居中 */
+    background: rgba(255, 255, 255, 0.6); /* 半透明背景 */
+    padding: 20px 30px;
+    border-radius: 15px; /* 圓角邊框 */
+    text-align: center;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* 微弱的陰影 */
+    width: 60%; /* 相對較小的寬度 */
+    max-width: 350px; /* 最大寬度限制 */
+    backdrop-filter: blur(8px); /* 背景模糊效果 */
+    animation: floatUp 1s ease-out forwards; /* 讓表單浮動進場 */
+}
+
+
+footer  {
+    background-color:  rgb(120, 87, 87);
+    color: #ffe4e4;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-size: 20px;
+}
+
+
+  
+ 
+
+ 
+
+  
+  
+
+  

@@ -1,0 +1,184 @@
+/* 全局字體和背景 */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ff6347;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+header a:hover{
+    text-decoration: underline;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+/* 内容布局 */
+.warp {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.header-img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.all {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.temp1 {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.temp2 {
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.temp2:hover {
+    transform: scale(1.05);
+}
+
+.team-member {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+footer  {
+        background-color:  rgb(120, 87, 87);
+        color: #ffe4e4;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        font-size: 20px;
+}
+
+/* 整體頁面背景 */
+.wrapper {
+    background: linear-gradient(135deg, #ffc9c9, rgb(255, 255, 255)); /* 漸變背景 */
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* 內容區域 */
+  .content {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    max-width: 1200px;
+    flex-wrap: wrap;
+  }
+  
+  /* 每個披薩卡片 */
+  .pizza-card {
+    background-color: #fff;
+    width: 300px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* 懸停效果 */
+  .pizza-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* 圓形圖片 */
+  .pizza-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+  }
+  
+  /* 圖片懸停效果 */
+  .pizza-img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* 標題設計 */
+  h3 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #333;
+    margin: 15px 0;
+    letter-spacing: 1px;
+  }
+
+  /* 下拉選單樣式 */
+.pizza-select {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* 下拉選單懸停效果 */
+  .pizza-select:hover {
+    background-color: #f5f5f5;
+  }
+  
+  /* 下拉選單聚焦效果 */
+  .pizza-select:focus {
+    outline: none;
+    border-color: #f06;
+  }
+  
+
+  
